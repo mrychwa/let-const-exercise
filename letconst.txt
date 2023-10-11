@@ -1,0 +1,33 @@
+ES5 Global Constants
+
+var PI = 3.14;
+PI = 42; // stop me from doing this!
+
+ES2015 Global Constants
+
+/* Write an ES2015 Version */
+
+const PI = 3.14
+
+const PI = 3.14
+undefined
+
+PI
+3.14
+PI = 42
+VM115:1 Uncaught TypeError: Assignment to constant variable.
+    at <anonymous>:1:4
+
+Quiz:
+
+- What is the difference between ***var*** and ***let***?
+var can be reassigned, redeclared and can be mutated. Let can be reassigned and mutated but not redeclared. Let creates block scope.
+
+- What is the difference between **var** and ***const***?
+var can be reassigned, redeclared and can be mutated. Const can be mutated but not reassigned or redeclared. Const creates block scope.
+
+- What is the difference between **let** and **const**?
+Let can be reassigned and mutated but not redeclared. Const can be mutated but not reassigned or redeclared. 
+
+- What is hoisting?
+JS behavior where variable declarations using the var keyword are processed before any code is executed. This means you can refer to a variable declared later without getting an exception. However the value of he variable will be undefined until the code where it is defined is executed. 
